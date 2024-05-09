@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .trending .cc{
+            display: flex;
+            min-width:300px;
+            margin-top: 8px;
+            background-color: #476915;
+            padding: 8px;
+        }
+        .trending .cc .cc-child{
+            margin-top: 10px;
+        }
+        .trending img{
+            height:100%;
+            width: 100%;
+            
+        }
+        .trending .ima{
+            height:4rem;
+            width: 4rem;
+            margin-right: 10px;
+        }
+        button:hover{
+            background: red;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="height:100vh; overflow-y: hidden;">
+
+    <nav class="flex justify-between justify-center p-1.5 bg-[#ba6f6a]" style="background: linear-gradient(90deg, rgba(15,0,36,0.9108893557422969) 0%, rgba(137,25,151,1) 39%, rgba(222,0,255,1) 100%);">
+        <div class="flex justify-between justify-center">
+            <i class="fa-brands fa-bitcoin text-2xl text-yellow-300 mr-3"></i>
+            <h2 class="font-bold text-2xl">CryptoView</h2>
+        </div>
+        <button class="border border-amber-800 min-w-20">
+            <a href="search.html">Search</a>
+        </button>
+    </nav>
+    <main class="bg-[#8c835a] pt-[13rem] h-[88vh]" style="position: relative;color:rgb(69, 1, 1)">
+        <header class="px-40">
+            <h2 class="text-4xl" style="margin-bottom: 1rem;">CryptoView</h2>
+            <p class="text-xl">A platform to view information about all cryptocurrencies live.</p>
+        </header>
+        <div class="bg-[url('./images/azusa.gif')] bg-no-repeat bg-cover h-[60vh] w-[40vw]" style="position: absolute;  left:54%;top:6%;border-radius: 20px;">
+        </div>
+        <div>
+            <h2 style="text-align: center;font-size: x-large;margin-top: 29vh;">Top Coins</h2>
+            <div class="trending flex" style="overflow: auto; padding-left: 10px;margin-right: 10px; ">
+
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-between justify-center  p-1.5 bg-[#ba6f6a]" style="height: 100%;">
+        <h2>&copy; CryptoView | Developed by me</h2>
+        <i class="fa-brands fa-square-github text-xl mr-1" ></i>
+    </footer>
+    <script src="home.js"></script>
+</body>
+
+</html>
